@@ -21,47 +21,47 @@ const uint16_t P014_b[] = {
 #define P014 P014_b
 
 extern "C" const PinMuxCfg_t g_pin_cfg[] = {
-    {BSP_IO_PORT_00_PIN_00, P000}, /* DAC !CS */
-    {BSP_IO_PORT_00_PIN_01, P001}, /* ADC !CS */
-    {BSP_IO_PORT_00_PIN_02, P002}, /* ADC !Reset */
-    {BSP_IO_PORT_00_PIN_03, P003}, /* ADC Data Ready */
-    {BSP_IO_PORT_00_PIN_04, P004}, /* ADC Start */
-    {BSP_IO_PORT_00_PIN_11, P011}, /* PGA G0 */
-    {BSP_IO_PORT_00_PIN_12, P012}, /* PGA G1 */
-    {BSP_IO_PORT_00_PIN_13, P013}, /* PGA G2 */
-    {BSP_IO_PORT_00_PIN_14, P014}, /* PGA G3 */
-    {BSP_IO_PORT_00_PIN_15, P015}, /* PGA G4 */
-    {BSP_IO_PORT_01_PIN_00, P100}, /* Module Interface IO0 */
-    {BSP_IO_PORT_01_PIN_01, P101}, /* Module Interface IO1 */
-    {BSP_IO_PORT_01_PIN_02, P102}, /* Module Interface CAN RX */
-    {BSP_IO_PORT_01_PIN_03, P103}, /* Module Interface CAN TX */
-    {BSP_IO_PORT_01_PIN_04, P104}, /* MUX A0 */
-    {BSP_IO_PORT_01_PIN_05, P105}, /* MUX A1 */
-    {BSP_IO_PORT_01_PIN_06, P106}, /* MUX A2 */
-    {BSP_IO_PORT_01_PIN_07, P107}, /* MUX Enable */
-    {BSP_IO_PORT_01_PIN_09, P109}, /* Module Interface SPI MOSI */
-    {BSP_IO_PORT_01_PIN_10, P110}, /* Module Interface SPI MISO */
-    {BSP_IO_PORT_01_PIN_11, P111}, /* Module Interface SPI SCLK */
-    {BSP_IO_PORT_01_PIN_12, P112}, /* Module Interface SPI CS */
-    {BSP_IO_PORT_01_PIN_13, P113}, /* Heater Relais */
-    {BSP_IO_PORT_02_PIN_04, P204}, /* PCB SPI SCK */
-    {BSP_IO_PORT_02_PIN_05, P205}, /* PCB SPI MOSI */
-    {BSP_IO_PORT_02_PIN_06, P206}, /* PCB SPI MISO */
-    {BSP_IO_PORT_02_PIN_12, P212}, /* Heartbeat LED */
-    {BSP_IO_PORT_02_PIN_13, P213}, /* User LED */
-    {BSP_IO_PORT_03_PIN_01, P301}, /* PCB I2C SDA (SCI2) */
-    {BSP_IO_PORT_03_PIN_02, P302}, /* PCB I2C SCL (SCI2) */
-    {BSP_IO_PORT_03_PIN_03, P303}, /* EEPROM Write Control */
-    {BSP_IO_PORT_03_PIN_04, P304}, /* Highside Power Enable */
-    {BSP_IO_PORT_04_PIN_00, P400}, /* Module Interface I2C0 SCL (PC Communication) */
-    {BSP_IO_PORT_04_PIN_01, P401}, /* Module Interface I2C0 SDA (PC Communication) */
-    {BSP_IO_PORT_04_PIN_02, P402}, /* Battery Relais Enable */
-    {BSP_IO_PORT_04_PIN_08, P408}, /* Shunt 1 Relais Enable */
-    {BSP_IO_PORT_04_PIN_09, P409}, /* Shunt 2 Relais Enable */
-    {BSP_IO_PORT_04_PIN_10, P410}, /* Shunt 3 Relais Enable */
-    {BSP_IO_PORT_04_PIN_11, P411}, /* Shunt 4 Relais Enable */
-    {BSP_IO_PORT_05_PIN_01, P501}, /* Module Interface I2C1 SDA (SCI1)*/
-    {BSP_IO_PORT_05_PIN_02, P502}, /* Module Interface I2C1 SCL (SCI1)*/
+    {BSP_IO_PORT_00_PIN_00, P000}, /* (0) DAC !CS */
+    {BSP_IO_PORT_00_PIN_01, P001}, /* (1) ADC !CS */
+    {BSP_IO_PORT_00_PIN_02, P002}, /* (2) ADC !Reset */
+    {BSP_IO_PORT_00_PIN_03, P003}, /* (3) ADC Data Ready */
+    {BSP_IO_PORT_00_PIN_04, P004}, /* (4) ADC Start */
+    {BSP_IO_PORT_00_PIN_11, P011}, /* (5) PGA G0 */
+    {BSP_IO_PORT_00_PIN_12, P012}, /* (6) PGA G1 */
+    {BSP_IO_PORT_00_PIN_13, P013}, /* (7) PGA G2 */
+    {BSP_IO_PORT_00_PIN_14, P014}, /* (8) PGA G3 */
+    {BSP_IO_PORT_00_PIN_15, P015}, /* (9) PGA G4 */
+    {BSP_IO_PORT_01_PIN_00, P100}, /* (10) Module Interface IO0 */
+    {BSP_IO_PORT_01_PIN_01, P101}, /* (11) Module Interface IO1 */
+    {BSP_IO_PORT_01_PIN_02, P102}, /* (12) Module Interface CAN RX */
+    {BSP_IO_PORT_01_PIN_03, P103}, /* (13) Module Interface CAN TX */
+    {BSP_IO_PORT_01_PIN_04, P104}, /* (14) MUX A0 */
+    {BSP_IO_PORT_01_PIN_05, P105}, /* (15) MUX A1 */
+    {BSP_IO_PORT_01_PIN_06, P106}, /* (16) MUX A2 */
+    {BSP_IO_PORT_01_PIN_07, P107}, /* (17) MUX Enable */
+    {BSP_IO_PORT_01_PIN_09, P109}, /* (18) Module Interface SPI MOSI */
+    {BSP_IO_PORT_01_PIN_10, P110}, /* (19) Module Interface SPI MISO */
+    {BSP_IO_PORT_01_PIN_11, P111}, /* (20) Module Interface SPI SCLK */
+    {BSP_IO_PORT_01_PIN_12, P112}, /* (21) Module Interface SPI CS */
+    {BSP_IO_PORT_01_PIN_13, P113}, /* (22) Heater Relais */
+    {BSP_IO_PORT_02_PIN_04, P204}, /* (23) PCB SPI SCK */
+    {BSP_IO_PORT_02_PIN_05, P205}, /* (24) PCB SPI MOSI */
+    {BSP_IO_PORT_02_PIN_06, P206}, /* (25) PCB SPI MISO */
+    {BSP_IO_PORT_02_PIN_12, P212}, /* (26) Heartbeat LED */
+    {BSP_IO_PORT_02_PIN_13, P213}, /* (27) User LED */
+    {BSP_IO_PORT_03_PIN_01, P301}, /* (28) PCB I2C SDA (SCI2) */
+    {BSP_IO_PORT_03_PIN_02, P302}, /* (29) PCB I2C SCL (SCI2) */
+    {BSP_IO_PORT_03_PIN_03, P303}, /* (30) EEPROM Write Control */
+    {BSP_IO_PORT_03_PIN_04, P304}, /* (31) Highside Power Enable */
+    {BSP_IO_PORT_04_PIN_00, P400}, /* (32) Module Interface I2C0 SCL (PC Communication) */
+    {BSP_IO_PORT_04_PIN_01, P401}, /* (33) Module Interface I2C0 SDA (PC Communication) */
+    {BSP_IO_PORT_04_PIN_02, P402}, /* (34) Battery Relais Enable */
+    {BSP_IO_PORT_04_PIN_08, P408}, /* (35) Shunt 1 Relais Enable */
+    {BSP_IO_PORT_04_PIN_09, P409}, /* (36) Shunt 2 Relais Enable */
+    {BSP_IO_PORT_04_PIN_10, P410}, /* (37) Shunt 3 Relais Enable */
+    {BSP_IO_PORT_04_PIN_11, P411}, /* (38) Shunt 4 Relais Enable */
+    {BSP_IO_PORT_05_PIN_01, P501}, /* (39) Module Interface I2C1 SDA (SCI1)*/
+    {BSP_IO_PORT_05_PIN_02, P502}, /* (40) Module Interface I2C1 SCL (SCI1)*/
 };
 
 extern "C"
