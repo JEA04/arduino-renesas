@@ -8,89 +8,63 @@
 extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT (PINCOUNT_fn())
-#define NUM_DIGITAL_PINS (20u)
-#define NUM_ANALOG_INPUTS (6u)
-#define NUM_ANALOG_OUTPUTS (1u)
-
-#define PIN_A0 (14u)
-#define PIN_A1 (15u)
-#define PIN_A2 (16u)
-#define PIN_A3 (17u)
-#define PIN_A4 (18u)
-#define PIN_A5 (19u)
-
-#define DAC8_HOWMANY (0)
-#define DAC12_HOWMANY (1)
-#define DAC A0
-#define IS_DAC(x) (x == DAC ? true : false)
-#define DAC_ADDRESS_12_CH0 R_DAC_BASE
-
-#undef A0
-#undef A1
-#undef A2
-#undef A3
-#undef A4
-#undef A5
-static const uint8_t A0 = PIN_A0;
-static const uint8_t A1 = PIN_A1;
-static const uint8_t A2 = PIN_A2;
-static const uint8_t A3 = PIN_A3;
-static const uint8_t A4 = PIN_A4;
-static const uint8_t A5 = PIN_A5;
+#define NUM_DIGITAL_PINS (41u)
 
 // Digital pins
 // -----------
-#define PIN_D0 (0u)
-#define PIN_D1 (1u)
-#define PIN_D2 (2u)
-#define PIN_D3 (3u)
-#define PIN_D4 (4u)
-#define PIN_D5 (5u)
-#define PIN_D6 (6u)
-#define PIN_D7 (7u)
-#define PIN_D8 (8u)
-#define PIN_D9 (9u)
-#define PIN_D10 (10u)
-#define PIN_D11 (11u)
-#define PIN_D12 (12u)
-#define PIN_D13 (13u)
-#define PIN_D14 (14u)
-#define PIN_D15 (15u)
-#define PIN_HB (26u)
+#define PIN_DAC_NCS (0u)
+#define PIN_ADC_NCS (1u)
+#define PIN_ADC_NRST (2u)
+#define PIN_ADC_NDRDY (3u)
+#define PIN_ADC_START (4u)
+#define PIN_PGA_G0 (5u)
+#define PIN_PGA_G1 (6u)
+#define PIN_PGA_G2 (7u)
+#define PIN_PGA_G3 (8u)
+#define PIN_PGA_G4 (9u)
+#define PIN_IO0 (10u)
+#define PIN_IO1 (11u)
+#define PIN_MUX_A0 (14u)
+#define PIN_MUX_A1 (15u)
+#define PIN_MUX_A2 (16u)
+#define PIN_MUX_ENABLE (17u)
+#define PIN_HEATER_RELAIS (22u)
+#define PIN_LED_HB (26u)
+#define PIN_LED_USER (27u)
+#define PIN_EEPROM_NWC (30)
+#define PIN_HS_PW_EN (31)
+#define PIN_ENABLE_BAT (34)
+#define PIN_ENABLE_SHUNT1 (35)
+#define PIN_ENABLE_SHUNT2 (36)
+#define PIN_ENABLE_SHUNT3 (37)
+#define PIN_ENABLE_SHUNT4 (38)
 
-#undef D0
-#undef D1
-#undef D2
-#undef D3
-#undef D4
-#undef D5
-#undef D6
-#undef D7
-#undef D8
-#undef D9
-#undef D10
-#undef D11
-#undef D12
-#undef D13
-#undef D14
-#undef D15
-static const uint8_t D0 = PIN_D0;
-static const uint8_t D1 = PIN_D1;
-static const uint8_t D2 = PIN_D2;
-static const uint8_t D3 = PIN_D3;
-static const uint8_t D4 = PIN_D4;
-static const uint8_t D5 = PIN_D5;
-static const uint8_t D6 = PIN_D6;
-static const uint8_t D7 = PIN_D7;
-static const uint8_t D8 = PIN_D8;
-static const uint8_t D9 = PIN_D9;
-static const uint8_t D10 = PIN_D10;
-static const uint8_t D11 = PIN_D11;
-static const uint8_t D12 = PIN_D12;
-static const uint8_t D13 = PIN_D13;
-static const uint8_t D14 = PIN_D14;
-static const uint8_t D15 = PIN_D15;
-static const uint8_t HB = PIN_HB;
+static const uint8_t DAC_NCS = PIN_DAC_NCS;
+static const uint8_t ADC_NCS = PIN_ADC_NCS;
+static const uint8_t ADC_NRST = PIN_ADC_NRST;
+static const uint8_t ADC_NDRDY = PIN_ADC_NDRDY;
+static const uint8_t ADC_START = PIN_ADC_START;
+static const uint8_t PGA_G0 = PIN_PGA_G0;
+static const uint8_t PGA_G1 = PIN_PGA_G1;
+static const uint8_t PGA_G2 = PIN_PGA_G3;
+static const uint8_t PGA_G3 = PIN_PGA_G3;
+static const uint8_t PGA_G4 = PIN_PGA_G4;
+static const uint8_t IO0 = PIN_IO0;
+static const uint8_t I01 = PIN_IO1;
+static const uint8_t MUX_A0 = PIN_MUX_A0;
+static const uint8_t MUX_A1 = PIN_MUX_A1;
+static const uint8_t MUX_A2 = PIN_MUX_A2;
+static const uint8_t MUX_ENABLE = PIN_MUX_ENABLE;
+static const uint8_t HEATER_RELAIS = PIN_HEATER_RELAIS;
+static const uint8_t LED_HB = PIN_LED_HB;
+static const uint8_t LED_USER = PIN_LED_USER;
+static const uint8_t EEPROM_NWC = PIN_EEPROM_NWC;
+static const uint8_t HS_PW_EN = PIN_HS_PW_EN;
+static const uint8_t ENABLE_BAT = PIN_ENABLE_BAT;
+static const uint8_t ENABLE_SHUNT1 = PIN_ENABLE_SHUNT1;
+static const uint8_t ENABLE_SHUNT2 = PIN_ENABLE_SHUNT2;
+static const uint8_t ENABLE_SHUNT3 = PIN_ENABLE_SHUNT3;
+static const uint8_t ENABLE_SHUNT4 = PIN_ENABLE_SHUNT4;
 
 #define digitalPinHasPWM(p) (IS_PIN_PWM(getPinCfgs(p, PIN_CFG_REQ_PWM)[0]))
 // LEDs
