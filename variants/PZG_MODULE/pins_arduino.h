@@ -103,19 +103,28 @@ static const uint8_t SCI1_I2C_SCL = WIRE2_SCL_PIN;
 
 /****** SPI CORE DEFINES ******/
 
-#define SPI_HOWMANY 1
+#define SPI_HOWMANY 2 // Zwei SPI Schnittstellen (PCB und Module Interface)
 
-#define PIN_SPI_MOSI (11)
-#define PIN_SPI_MISO (12)
-#define PIN_SPI_SCK (13)
-#define PIN_SPI_CS (10)
+// PCB SPI
+#define PIN_SPI_MOSI (24u) // P205
+#define PIN_SPI_MISO (25u) // P206
+#define PIN_SPI_SCK (23u)  // P204
+// CS Pins sind separat definiert
 #define FORCE_SPI_MODE (MODE_SPI)
+static const uint8_t PCB_MOSI = PIN_SPI_MOSI;
+static const uint8_t PCB_MISO = PIN_SPI_MISO;
+static const uint8_t PCB_SCK = PIN_SPI_SCK;
 
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK = PIN_SPI_SCK;
-static const uint8_t CS = PIN_SPI_CS;
-static const uint8_t SS = PIN_SPI_CS;
+// Module Interface SPI (SPIB)
+#define PIN_SPI1_MOSI (18u) // P109
+#define PIN_SPI1_MISO (19u) // P110
+#define PIN_SPI1_SCK (20u)  // P111
+#define PIN_SPI1_CS (21u)   // P112
+#define FORCE_SPI1_MODE (MODE_SPI)
+static const uint8_t SPIB_MOSI = PIN_SPI1_MOSI;
+static const uint8_t SPIB_MISO = PIN_SPI1_MISO;
+static const uint8_t SPIB_SCK = PIN_SPI1_SCK;
+static const uint8_t SPIB_CS = PIN_SPI1_CS;
 
 /****** GTP CORE DEFINES *******/
 
