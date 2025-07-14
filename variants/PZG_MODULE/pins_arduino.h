@@ -139,8 +139,8 @@ static const uint8_t SPIB_CS = PIN_SPI1_CS;
 
 #define CAN_HOWMANY 1
 
-#define PIN_CAN0_TX (4)
-#define PIN_CAN0_RX (5)
+#define PIN_CAN0_TX 13 // P103
+#define PIN_CAN0_RX 12 // P102
 #define PIN_CAN0_STBY (-1)
 
 #define EXT_INTERRUPTS_HOWMANY 2
@@ -152,7 +152,7 @@ static const uint8_t SPIB_CS = PIN_SPI1_CS;
 
 #define USB_VID (0x2341)
 #define USB_PID (0x0069)
-#define USB_NAME "UNO R4 Minima"
+#define USB_NAME "PZG-Module"
 
 #define VUSB_LDO_ENABLE 1
 
