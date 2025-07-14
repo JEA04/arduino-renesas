@@ -82,12 +82,24 @@ static const uint8_t ENABLE_SHUNT4 = PIN_ENABLE_SHUNT4;
 
 /****** WIRE CORE DEFINES ******/
 
-#define WIRE_HOWMANY 1
-#define WIRE_SDA_PIN 18 /* A4 */
-#define WIRE_SCL_PIN 19 /* A5 */
+#define WIRE_HOWMANY 3 // Drei I2C Schnittstellen vorhanden. (PCB I2C, PC-I2C, Module Interface I2C)
+// PCB I2C
+#define WIRE_SDA_PIN (28u) // P301
+#define WIRE_SCL_PIN (29u) // P302
+static const uint8_t PCB_I2C_SDA = WIRE_SDA_PIN;
+static const uint8_t PCB_I2C_SCL = WIRE_SCL_PIN;
 
-static const uint8_t SDA = WIRE_SDA_PIN;
-static const uint8_t SCL = WIRE_SCL_PIN;
+// Communication I2C (I2C0)
+#define WIRE1_SDA_PIN (33u) // P401
+#define WIRE1_SCL_PIN (32u) // P400
+static const uint8_t COMM_I2C_SDA = WIRE1_SDA_PIN;
+static const uint8_t COMM_I2C_SCL = WIRE1_SCL_PIN;
+
+// Module Interface I2C (I2C1)
+#define WIRE2_SDA_PIN (40u) // P502
+#define WIRE2_SCL_PIN (39u) // P501
+static const uint8_t SCI1_I2C_SDA = WIRE2_SDA_PIN;
+static const uint8_t SCI1_I2C_SCL = WIRE2_SCL_PIN;
 
 /****** SPI CORE DEFINES ******/
 
