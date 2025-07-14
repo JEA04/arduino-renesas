@@ -83,7 +83,7 @@ static const uint8_t ENABLE_SHUNT4 = PIN_ENABLE_SHUNT4;
 // PCB I2C
 #define WIRE_SDA_PIN (28u) // P301
 #define WIRE_SCL_PIN (29u) // P302
-static const uint8t_t PCB_I2C_SDA = WIRE_SDA_PIN;
+static const uint8_t PCB_I2C_SDA = WIRE_SDA_PIN;
 static const uint8_t PCB_I2C_SCL = WIRE_SCL_PIN;
 
 // Communication I2C (I2C0)
@@ -162,11 +162,10 @@ static const uint8_t SPIB_CS = PIN_SPI1_CS;
 
 // TODO: removeme
 #ifdef __cplusplus
-    extern "C"
-{
+extern "C"{
 #endif
-    void iic_slave_tei_isr(void);
-    void iic_slave_eri_isr(void);
+void iic_slave_tei_isr(void);
+void iic_slave_eri_isr(void);
 #ifdef __cplusplus
 }
 #endif
