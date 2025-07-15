@@ -12,10 +12,10 @@ extern "C" unsigned int PINCOUNT_fn();
 
 // Digital pins
 // -----------
-#define PIN_DAC_NCS (0u)
-#define PIN_ADC_NCS (1u)
-#define PIN_ADC_NRST (2u)
-#define PIN_ADC_NDRDY (3u)
+#define PIN_DAC_CS (0u)
+#define PIN_ADC_CS (1u)
+#define PIN_ADC_RST (2u)
+#define PIN_ADC_DRDY (3u)
 #define PIN_ADC_START (4u)
 #define PIN_PGA_G0 (5u)
 #define PIN_PGA_G1 (6u)
@@ -39,10 +39,10 @@ extern "C" unsigned int PINCOUNT_fn();
 #define PIN_ENABLE_SHUNT3 (37)
 #define PIN_ENABLE_SHUNT4 (38)
 
-static const uint8_t DAC_NCS = PIN_DAC_NCS;
-static const uint8_t ADC_NCS = PIN_ADC_NCS;
-static const uint8_t ADC_NRST = PIN_ADC_NRST;
-static const uint8_t ADC_NDRDY = PIN_ADC_NDRDY;
+static const uint8_t DAC_CS = PIN_DAC_CS;
+static const uint8_t ADC_CS = PIN_ADC_CS;
+static const uint8_t ADC_RST = PIN_ADC_RST;
+static const uint8_t ADC_DRDY = PIN_ADC_DRDY;
 static const uint8_t ADC_START = PIN_ADC_START;
 static const uint8_t PGA_G0 = PIN_PGA_G0;
 static const uint8_t PGA_G1 = PIN_PGA_G1;
