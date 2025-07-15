@@ -49,8 +49,8 @@ extern "C" const PinMuxCfg_t g_pin_cfg[] = {
     {BSP_IO_PORT_02_PIN_06, P206}, /* (25) PCB SPI MISO */
     {BSP_IO_PORT_02_PIN_12, P212}, /* (26) Heartbeat LED */
     {BSP_IO_PORT_02_PIN_13, P213}, /* (27) User LED */
-    {BSP_IO_PORT_03_PIN_01, P301}, /* (28) PCB I2C SDA (SCI2) */
-    {BSP_IO_PORT_03_PIN_02, P302}, /* (29) PCB I2C SCL (SCI2) */
+    {BSP_IO_PORT_03_PIN_01, P301}, /* (28) PCB I2C SCL (SCI2) */
+    {BSP_IO_PORT_03_PIN_02, P302}, /* (29) PCB I2C SDA (SCI2) */
     {BSP_IO_PORT_03_PIN_03, P303}, /* (30) EEPROM Write Control */
     {BSP_IO_PORT_03_PIN_04, P304}, /* (31) Highside Power Enable */
     {BSP_IO_PORT_04_PIN_00, P400}, /* (32) Module Interface I2C0 SCL (PC Communication) */

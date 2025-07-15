@@ -46,7 +46,7 @@ static const uint8_t ADC_NDRDY = PIN_ADC_NDRDY;
 static const uint8_t ADC_START = PIN_ADC_START;
 static const uint8_t PGA_G0 = PIN_PGA_G0;
 static const uint8_t PGA_G1 = PIN_PGA_G1;
-static const uint8_t PGA_G2 = PIN_PGA_G3;
+static const uint8_t PGA_G2 = PIN_PGA_G2;
 static const uint8_t PGA_G3 = PIN_PGA_G3;
 static const uint8_t PGA_G4 = PIN_PGA_G4;
 static const uint8_t IO0 = PIN_IO0;
@@ -84,8 +84,8 @@ static const uint8_t ENABLE_SHUNT4 = PIN_ENABLE_SHUNT4;
 
 #define WIRE_HOWMANY 3 // Drei I2C Schnittstellen vorhanden. (PCB I2C, PC-I2C, Module Interface I2C)
 // PCB I2C
-#define WIRE_SDA_PIN (28u) // P301
-#define WIRE_SCL_PIN (29u) // P302
+#define WIRE_SDA_PIN (29u) // P302
+#define WIRE_SCL_PIN (28u) // P301
 static const uint8_t PCB_I2C_SDA = WIRE_SDA_PIN;
 static const uint8_t PCB_I2C_SCL = WIRE_SCL_PIN;
 
@@ -110,7 +110,7 @@ static const uint8_t SCI1_I2C_SCL = WIRE2_SCL_PIN;
 #define PIN_SPI_MISO (25u) // P206
 #define PIN_SPI_SCK (23u)  // P204
 // CS Pins sind separat definiert
-#define FORCE_SPI_MODE (MODE_SPI)
+#define FORCE_SPI_MODE (MODE_SCI)   // SCI0 wird verwendet
 static const uint8_t PCB_MOSI = PIN_SPI_MOSI;
 static const uint8_t PCB_MISO = PIN_SPI_MISO;
 static const uint8_t PCB_SCK = PIN_SPI_SCK;
@@ -120,7 +120,7 @@ static const uint8_t PCB_SCK = PIN_SPI_SCK;
 #define PIN_SPI1_MISO (19u) // P110
 #define PIN_SPI1_SCK (20u)  // P111
 #define PIN_SPI1_CS (21u)   // P112
-#define FORCE_SPI1_MODE (MODE_SPI)
+#define FORCE_SPI1_MODE (MODE_SCI)  // SCI9 wird verwendet
 static const uint8_t SPIB_MOSI = PIN_SPI1_MOSI;
 static const uint8_t SPIB_MISO = PIN_SPI1_MISO;
 static const uint8_t SPIB_SCK = PIN_SPI1_SCK;
