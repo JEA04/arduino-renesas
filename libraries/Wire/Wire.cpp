@@ -252,9 +252,8 @@ done:
     ioport_sda = USE_SCI_EVEN_CFG(cfg_sda) ? IOPORT_PERIPHERAL_SCI0_2_4_6_8 : IOPORT_PERIPHERAL_SCI1_3_5_7_9;
     ioport_scl = USE_SCI_EVEN_CFG(cfg_scl) ? IOPORT_PERIPHERAL_SCI0_2_4_6_8 : IOPORT_PERIPHERAL_SCI1_3_5_7_9;
   
-    R_IOPORT_PinCfg(&g_ioport_ctrl, g_pin_cfg[sda_pin].pin, (uint32_t) (IOPORT_CFG_PULLUP_ENABLE | IOPORT_CFG_PERIPHERAL_PIN | ioport_sda));
-    R_IOPORT_PinCfg(&g_ioport_ctrl, g_pin_cfg[scl_pin].pin, (uint32_t) (IOPORT_CFG_PULLUP_ENABLE | IOPORT_CFG_PERIPHERAL_PIN | ioport_scl));
-  
+    R_IOPORT_PinCfg(&g_ioport_ctrl, g_pin_cfg[sda_pin].pin, (uint32_t) (IOPORT_CFG_NMOS_ENABLE | IOPORT_CFG_PERIPHERAL_PIN | ioport_sda));
+    R_IOPORT_PinCfg(&g_ioport_ctrl, g_pin_cfg[scl_pin].pin, (uint32_t) (IOPORT_CFG_NMOS_ENABLE | IOPORT_CFG_PERIPHERAL_PIN | ioport_scl));
   }
   else {
     if(channel >= TWOWIRE_MAX_I2C_CHANNELS) { // channels are 0 index based
