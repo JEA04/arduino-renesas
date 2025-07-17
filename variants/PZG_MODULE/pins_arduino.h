@@ -120,7 +120,7 @@ static const uint8_t PCB_SCK = PIN_SPI_SCK;
 #define PIN_SPI1_MISO (19u) // P110
 #define PIN_SPI1_SCK (20u)  // P111
 #define PIN_SPI1_CS (21u)   // P112
-#define FORCE_SPI1_MODE (MODE_SCI)  // SCI9 wird verwendet
+#define FORCE_SPI1_MODE (MODE_SPI)
 static const uint8_t SPIB_MOSI = PIN_SPI1_MOSI;
 static const uint8_t SPIB_MISO = PIN_SPI1_MISO;
 static const uint8_t SPIB_SCK = PIN_SPI1_SCK;
