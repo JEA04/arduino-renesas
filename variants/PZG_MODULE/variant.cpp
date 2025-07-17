@@ -44,9 +44,9 @@ extern "C" const PinMuxCfg_t g_pin_cfg[] = {
     {BSP_IO_PORT_01_PIN_11, P111}, /* (20) Module Interface SPI SCLK */
     {BSP_IO_PORT_01_PIN_12, P112}, /* (21) Module Interface SPI CS */
     {BSP_IO_PORT_01_PIN_13, P113}, /* (22) Heater Relais */
-    {BSP_IO_PORT_02_PIN_04, P204}, /* (23) PCB SPI SCK */
-    {BSP_IO_PORT_02_PIN_05, P205}, /* (24) PCB SPI MOSI */
-    {BSP_IO_PORT_02_PIN_06, P206}, /* (25) PCB SPI MISO */
+    {BSP_IO_PORT_02_PIN_04, P204}, /* (23) PCB SPI SCK  (SCI0) */
+    {BSP_IO_PORT_02_PIN_05, P205}, /* (24) PCB SPI MOSI (SCI0) */
+    {BSP_IO_PORT_02_PIN_06, P206}, /* (25) PCB SPI MISO (SCI0) */
     {BSP_IO_PORT_02_PIN_12, P212}, /* (26) Heartbeat LED */
     {BSP_IO_PORT_02_PIN_13, P213}, /* (27) User LED */
     {BSP_IO_PORT_03_PIN_01, P301}, /* (28) PCB I2C SCL (SCI2) */
