@@ -484,13 +484,13 @@ void ArduinoSPI::configSpiSci(arduino::SPISettings const & settings)
   uint32_t spmr = _spi_sci_ctrl.p_reg->SPMR;
   uint32_t scmr = _spi_sci_ctrl.p_reg->SCMR;
   uint32_t smr  = R_SCI0_SMR_CM_Msk;
+  // NOTE: Reset both CKPH and CKPOL to zero. Otherwise the following configuration assignments won't work
+  spmr &= ~(R_SCI0_SPMR_CKPH_Msk | R_SCI0_SPMR_CKPH_Msk);
 
   /* Configure CPHA setting. */
   spmr |= (uint32_t) clk_phase << 7;
-
   /* Configure CPOL setting. */
   spmr |= (uint32_t) clk_polarity << 6;
-
   /* Configure Bit Order (MSB,LSB) */
   scmr |= (uint32_t) bit_order << 3;
 
